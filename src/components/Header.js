@@ -11,7 +11,6 @@ import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
-import AccountCircle from "@mui/icons-material/AccountCircle";
 
 import MoreIcon from "@mui/icons-material/MoreVert";
 
@@ -114,12 +113,12 @@ function Header() {
             <MenuIcon />
           </IconButton>
           <Typography
-            variant="h6"
+            variant="h2"
             noWrap
             component="div"
             sx={{ display: { xs: "none", sm: "block" } }}
           >
-            MUI
+            Parks
           </Typography>
           <Search>
             <SearchIconWrapper>
