@@ -2,19 +2,11 @@
   text-align: center;
 }
 
-.header {
-  background-color: #282c34;
-  overflow: hidden;
-  padding: 20px 10px;
-  color: white;
-}
-
 .main {
   background-color: antiquewhite;
 }
 
 .footer {
-  background-color: #282c34;
   position: fixed;
   left: 0;
   bottom: 0;
