@@ -1,4 +1,3 @@
-import "./App.css";
 import React, { useState } from "react";
 import { Map, Marker } from "@vis.gl/react-google-maps";
 
