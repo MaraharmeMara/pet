@@ -1,9 +1,5 @@
 .App {
   text-align: center;
-  display: flex;
-  padding: 5rem;
-  justify-content: space-evenly;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .main {
@@ -21,6 +17,12 @@
 }
 
 .map-container {
+  margin-top: 50px;
+  margin-left: 70px;
+  display: flex;
+  padding: 5rem;
+  justify-content: space-evenly;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   height: 500px;
   width: 50%;
   border: 2px solid black;
