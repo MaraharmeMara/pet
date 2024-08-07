@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Map, Marker } from "@vis.gl/react-google-maps";
+import { APIProvider, Map, Marker } from "@vis.gl/react-google-maps";
 
 const CustomMap = () => {
   // shows marker on London by default
@@ -11,15 +11,16 @@ const CustomMap = () => {
   return (
     <div className="map-container">
       <APIProvider apiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY}>
-      <Map
-        style={{ borderRadius: "20px" }}
-        defaultZoom={13}
-        defaultCenter={markerLocation}
-        gestureHandling={"greedy"}
-        disableDefaultUI
-      >
-        <Marker position={markerLocation} />
-      </Map>
+        <Map
+          style={{ borderRadius: "20px" }}
+          defaultZoom={13}
+          defaultCenter={markerLocation}
+          gestureHandling={"greedy"}
+          disableDefaultUI
+        >
+          <Marker position={markerLocation} />
+        </Map>
+      </APIProvider>
     </div>
   );
 };
