@@ -16,8 +16,7 @@ const CustomMap = () => {
 
   const Pin = PetsIcon;
 
-  type Poi = { key: string, location: google.maps.LatLng };
-  const location: Poi[] = [
+  const location = [
     {
       key: "Avaarannan koirapuisto",
       location: { lat: 62.6139119100737, lng: 29.694705008595786 },
@@ -38,10 +37,10 @@ const CustomMap = () => {
       location: { lat: 62.66519627875552, lng: 29.512561231940342 },
     },
   ];
-  const PoiMarkers = (props: { pois: Poi[] }) => {
+  const PoiMarkers = (props) => {
     return (
       <>
-        {props.pois.map((poi: Poi) => (
+        {props.pois.map((poi) => (
           <AdvancedMarker key={poi.key} position={poi.location}>
             <Pin
               background={"#FBBC04"}
